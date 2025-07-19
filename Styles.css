@@ -3,9 +3,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --text-color: #FFFEFF;
+    --text-color-secondary: #999799;
+    --container-color-fill: #323033;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFFEFF;
+    color: var(--text-color);
+    margin: 0px;
 }
 
 /*Headings*/
@@ -15,7 +22,7 @@ h1, h5{
 
 
 h5{
-    color: #999799;
+    color: var(--text-color-secondary);
     text-transform: uppercase;
     margin-bottom: -14px;
 }
@@ -23,13 +30,14 @@ h5{
 div{
     margin-left: 16px;
     margin-right: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px
+    margin-bottom: 12px;
+    margin-top: 12px
 }
 
 img{
     border-radius: 16px;
     object-fit: cover;
+
 }
 
 .Hotel_Info{
@@ -37,21 +45,35 @@ img{
 }
 
 .Hotel_Name{
-    color: #FFFEFF;
+    color: var(--text-color);
 }
 
 .Stay_Summary{
-    color:#999799;
+    color: var(--text-color-secondary);
     font-size: 14px;
     margin: 0px;
 }
 
+.collection_container, .container_title, .container_label{
+    background-color: var(--container-color-fill);
+}
+
 .collection_container{
     padding: 16px;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container_title{
+    margin:0px;
+    padding-bottom: 8px;
 }
 
 .container_label{
     font-size: 12px;
-    padding-top: 8px;
+    margin: 0px;
+}
+
+.grey_text{
+    color: var(--text-color-secondary)
 }
