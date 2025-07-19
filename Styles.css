@@ -77,3 +77,21 @@ img{
 .grey_text{
     color: var(--text-color-secondary)
 }
+
+.button_container{
+    display: flex;
+    justify-content: center;
+}
+
+.check_in_button{
+    background-color: var(--text-color);
+    border-radius: 24px;
+    color: var(--container-color-fill);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-align: center;
+    position: relative;
+    min-width: 275px;
+}
